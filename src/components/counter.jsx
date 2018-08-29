@@ -8,6 +8,10 @@ class Counter extends Component {
       //ajax call and get new data from the server
     }
   }
+
+  componentWillUnmount() {
+    console.log("Counter-Unmount");
+  }
   // state = {
   //   value: this.props.counter.value
   // };
