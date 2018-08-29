@@ -13,6 +13,18 @@ class App extends Component {
     ]
   };
 
+  constructor() {
+    super();
+    console.log("App-Constructor");
+    //this.state = this.props.
+  }
+
+  componentDidMount() {
+    //Ajax call and data from the server
+    //this.setState({movies from the server})
+    console.log("App-Mounted");
+  }
+
   handleIncrement = counter => {
     //console.log(counter);
     const counters = [...this.state.counters]; //clone the array
@@ -38,6 +50,7 @@ class App extends Component {
   };
 
   render() {
+    console.log("App-Rendered");
     return (
       <React.Fragment>
         <NavBar

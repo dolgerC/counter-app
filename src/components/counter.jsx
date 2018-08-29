@@ -20,6 +20,7 @@ class Counter extends Component {
   //this is done for reseting the values if not the page just simply stay as it is
 
   render() {
+    console.log("Counter-Rendered");
     return (
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
